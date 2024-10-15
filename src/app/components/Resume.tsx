@@ -1,5 +1,5 @@
 import SliderExperience from "./commons/SliderExperience";
-import TitleSection from "./commons/titleSection";
+import TitleSection from "./commons/TitleSection";
 
 const Resume = () => {
   return <div className="sectionSite">

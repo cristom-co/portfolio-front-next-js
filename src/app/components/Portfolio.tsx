@@ -1,5 +1,5 @@
 import SliderImages from "./commons/SliderImages";
-import TitleSection from "./commons/titleSection";
+import TitleSection from "./commons/TitleSection";
 
 const Portfolio = () => {
   return <div className="sectionSite">

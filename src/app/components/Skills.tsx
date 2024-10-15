@@ -1,4 +1,4 @@
-import TitleSection from "./commons/titleSection";
+import TitleSection from "./commons/TitleSection";
 import Image from "next/image";
 const Skills = () => {
   return <div   className="sectionSite">
