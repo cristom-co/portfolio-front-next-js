@@ -16,3 +16,5 @@ bun dev
 
 
 Figma project:  [Figma](https://www.figma.com/design/gYaNDzAUwafIo4yKLE3zLR/Portfolio?node-id=0-1&m=dev&t=vetWUs6uGub75gf9-1)
+
+![Imagen del proyecto](/mockup.png)
