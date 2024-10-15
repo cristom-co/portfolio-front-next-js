@@ -3,15 +3,66 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primario: rgba(192, 192, 192, 0.367);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
 }
+html {
+  font-family: 'Inter', sans-serif;
+  color: #474747;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+.sectionHeader {
+  background-color: var(--color-primario);
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  
+  width: 100%;
+  height: 5vh;
+  
+  text-align: center;
+  padding: 0.2rem;
+}
+
+/* triangle */
+.sectionHeader::before {
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  border-top: 90px solid var(--color-primario);
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+}
+
+.sectionHeader__content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  width: 100%;
+  
+  font-size: 1.5rem;
+}
+
+.sectionSite {
+  scroll-snap-align: start;
+  scroll-margin-top: 12vh;
+  
+  border-bottom: 1px solid white;
+  height: 100vh;
+  margin-top: 12vh;
+  padding: 10% 5%;
+}
+
