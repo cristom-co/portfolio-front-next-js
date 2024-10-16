@@ -4,6 +4,7 @@
 
 :root {
   --color-primario: rgba(192, 192, 192, 0.367);
+  --color-text:  #474747;
 }
 
 * {
@@ -11,12 +12,13 @@
 }
 html {
   font-family: 'Inter', sans-serif;
-  color: #474747;
+  color: var(--color-text);
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
 
+/* SECTION HEADER */
 .sectionHeader {
   background-color: var(--color-primario);
 
@@ -57,6 +59,7 @@ html {
   font-size: 1.5rem;
 }
 
+/* SECTION SITE */
 .sectionSite {
   scroll-snap-align: start;
   scroll-margin-top: 12vh;
@@ -68,12 +71,35 @@ html {
 }
 
 
-.image {
-  transition: opacity 0.3s ease-in-out; /* Transición suave para la opacidad */
+/* SLIDER */
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.hidden {
-  opacity: 0; /* Imagen oculta */
+
+.slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Horizontal snapping */
+  scroll-behavior: smooth;       /* Smooth scrolling between items */
+  gap: 15px;                     /* Space between the slider items */
+  margin: 0 10px;
 }
-.visible {
-  opacity: 1; /* Imagen visible */
+
+.slider-item {
+  min-width: 300px;              /* Width of each item */
+  height: 40vh;                 /* Height of each item */
+  background-color: var(--color-primario);   /* Background color for visibility */
+  scroll-snap-align: start;      /* Align each item to the start of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 10px;
+  flex-shrink: 0;                /* Prevent items from shrinking */
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
 }
