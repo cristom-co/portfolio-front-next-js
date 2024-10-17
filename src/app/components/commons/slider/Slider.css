@@ -1,0 +1,36 @@
+
+/* SLIDER */
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Horizontal snapping */
+    scroll-behavior: smooth;       /* Smooth scrolling between items */
+    gap: 15px;                     /* Space between the slider items */
+    margin: 0 10px;
+  }
+  
+  .slider-item {
+    min-width: 310px;              /* Width of each item */
+
+    height: 40vh;                 /* Height of each item */
+    scroll-snap-align: start;      /* Align each item to the start of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+  
+  .slider-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-item-text {
+    background-color: var(--color-primario);   /* Background color for visibility */
+  }
