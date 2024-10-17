@@ -11,7 +11,8 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
         <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} />
         <div className="slider-container">
             {items.map((item, index) => (
-                <div className="slider-item" key={index}>
+                
+                <div className={`slider-item ${item.type === 'image' ? 'slider-item-image' : 'slider-item-text'}`} key={index}>
 
                     <Popup>
                         {item.type === 'image' ? (
@@ -26,28 +27,23 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                     }}
                                 />
                             </div>   
-                        ) : (<div className='p-4 slider-item-text rounded-xl'>
-                                <h3>{item.title}</h3>
-                                <p>{item.description}</p>
+                        ) : (<div className='p-4 rounded-xl'>
+                                <h3 className=' font-bold'>{item.title}</h3>
+                                <p>{item.description.substring(0, 300)}... <span className='text-sm text-gray-500'>See More</span></p>
                             </div>)}
 
                         <div>
-                            <h3 className='text-xl font-bold my-5'>{item.title}</h3>
-                            <p className='text-sm my-5'>{item.description}</p>
+                            {item.type == "text" && <h3 className='font-bold'>{item.title}</h3>}
+                            <p className="my-5 text-lg">{item.description}</p>
 
                             {item.type === 'image' && (
-                                    <div style={{ position: 'relative', width: '100%', height: '300px' }}>
-                                    <Image
-                                        className='rounded-xl'
-                                        src={item.image} // Ruta de la imagen
-                                        alt={item.description} // Texto alternativo
-                                        fill={true}
-                                        style={{
-                                            objectFit: 'cover',
-                                        }}
-                                    />
-                                </div>
-                           
+                                <Image
+                                    className='rounded-xl'
+                                    src={item.imageComplete} // Ruta de la imagen
+                                    alt={item.description} // Texto alternativo
+                                    width={400}
+                                    height={1000}
+                                />
                             )}
                         </div>
                     </Popup>
