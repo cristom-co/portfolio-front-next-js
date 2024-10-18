@@ -11,14 +11,14 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
         <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} />
         <div className="slider-container">
             {items.map((item, index) => (
-                
+
                 <div className={`slider-item ${item.type === 'image' ? 'slider-item-image' : 'slider-item-text'}`} key={index}>
 
                     <Popup>
                         {item.type === 'image' ? (
                             <div className='relative w-full h-80' >
                                 <Image
-                                    src={item.image} // Ruta de la imagen
+                                    src={item.image ?? ''} // Ruta de la imagen
                                     alt={item.description} // Texto alternativo
                                     fill={true}
                                     className='rounded-xl'
@@ -26,23 +26,23 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                         objectFit: 'cover',
                                     }}
                                 />
-                            </div>   
+                            </div>
                         ) : (<div className='p-4 rounded-xl'>
-                                <h3 className=' font-bold'>{item.title}</h3>
-                                <p>{item.description.substring(0, 300)}... <span className='text-sm text-gray-500'>See More</span></p>
-                            </div>)}
+                            <h3 className=' font-bold'>{item.title}</h3>
+                            <p>{item.description.substring(0, 300)}... <span className='text-sm text-gray-500'>See More</span></p>
+                        </div>)}
 
-                        <div>
+                        <div className="max-h-[80vh] overflow-y-auto place-items-center">
                             {item.type == "text" && <h3 className='font-bold'>{item.title}</h3>}
-                            <p className="my-5 text-lg">{item.description}</p>
-
+                            <p className="my-5 text-lg sm:w-full md:w-1/2 lg:w-1/3">{item.description}</p>
                             {item.type === 'image' && (
                                 <Image
                                     className='rounded-xl'
-                                    src={item.imageComplete} // Ruta de la imagen
+                                    src={item.imageComplete ?? ''} // Ruta de la imagen
                                     alt={item.description} // Texto alternativo
-                                    width={400}
-                                    height={1000}
+                                    width={800} // Ancho base de la imagen
+                                    height={600} // Alto base de la imagen
+                                    layout="responsive" // Hace que la imagen sea responsive
                                 />
                             )}
                         </div>

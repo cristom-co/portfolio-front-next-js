@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="sm:w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto">
-        <Portfolio />
-        <Skills />
-        <Resume />
-        <Contact />
-      </div>
+        <div className="sm:w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto">
+          <Portfolio />
+          <Skills />
+          <Resume />
+          <Contact />
+        </div>
       <Footer />
     </>
   );

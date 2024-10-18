@@ -4,7 +4,7 @@ const Skills = () => {
   return <div   className="sectionSite">
     <TitleSection title="Skills" description="Skilled in React Native, Redux, Jest, Cypress, Next.js, and Git Flow. English proficiency at B2 level for international collaboration." />      
     
-    <div className="grid grid-cols-3 gap-10 pt-2 mx-5 items-center">
+    <div className="grid grid-cols-3 gap-10 pt-2 mx-5 mt-10 place-items-center">
         <Image src="/icons/imagen.png" alt="React" width={80} height={80} />
         <Image src="/icons/imagen 21.png" alt="React" width={80} height={80} />  
         <Image src="/icons/imagen 22.png" alt="React" width={80} height={80} />
