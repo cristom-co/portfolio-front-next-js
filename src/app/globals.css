@@ -62,7 +62,7 @@ html {
 /* SECTION SITE */
 .sectionSite {
   scroll-snap-align: start;
-  scroll-margin-top: 12vh;
+  scroll-margin-top: 20vh;
   border-bottom: 1px solid white;
   height: 100vh;
   margin-top: 12vh;
