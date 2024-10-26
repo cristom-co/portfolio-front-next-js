@@ -32,9 +32,9 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                             <p>{item.description.substring(0, 300)}... <span className='text-sm text-gray-500'>See More</span></p>
                         </div>)}
 
-                        <div className="max-h-[80vh] overflow-y-auto place-items-center">
+                        <div>
                             {item.type == "text" && <h3 className='font-bold'>{item.title}</h3>}
-                            <p className="my-5 text-lg sm:w-full md:w-1/2 lg:w-1/3">{item.description}</p>
+                            <p className="my-5 text-lg">{item.description}</p>
                             {item.type === 'image' && (
                                 <Image
                                     className='rounded-xl'

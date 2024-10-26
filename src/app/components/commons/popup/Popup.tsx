@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import './Popup.css';
 
-const Popup = ({ children }: { children: React.ReactNode }) => {
+
+const Popup = ({ children }: { children: React.ReactNode}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -27,7 +28,7 @@ const Popup = ({ children }: { children: React.ReactNode }) => {
           transition={{ duration: 0.5 }}
         >
           <motion.div
-            className="popup"
+            className="popup overflow-y-auto place-items-center"
             initial={{ y: "-100vh" }}
             animate={{ y: 0 }}
             exit={{ y: "-100vh" }}

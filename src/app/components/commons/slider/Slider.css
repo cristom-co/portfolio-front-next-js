@@ -12,7 +12,6 @@
     scroll-snap-type: x mandatory; /* Horizontal snapping */
     scroll-behavior: smooth;       /* Smooth scrolling between items */
     gap: 15px;                     /* Space between the slider items */
-    margin: 0 10px;
   }
   
   .slider-item {

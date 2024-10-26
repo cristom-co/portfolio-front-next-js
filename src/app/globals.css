@@ -69,3 +69,8 @@ html {
   padding-top: 10%;
 }
 
+@media (max-width: 425px) {
+  .sectionSite {
+    scroll-margin-top: 13vh;
+  }
+}
