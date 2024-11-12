@@ -24,11 +24,6 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             modules={[Pagination, Scrollbar, A11y]}
             spaceBetween={5}
             slidesPerView={1}
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
-            }}
-            pagination={{ clickable: true }}
             loop
             style={{ width: '100%', height: '40vh' }} // Ajusta la altura completa de la pantalla
 
