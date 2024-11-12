@@ -30,7 +30,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             }}
             pagination={{ clickable: true }}
             loop
-            style={{ width: '100%', height: '50vh' }} // Ajusta la altura completa de la pantalla
+            style={{ width: '100%', height: '40vh' }} // Ajusta la altura completa de la pantalla
 
         >
             {items.map((item, index) => (
@@ -51,7 +51,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                         </div>
                     ) : (<div className='p-4 rounded-xl'>
                         <h3 className=' font-bold'>{item.title}</h3>
-                        <p>{item.description.substring(0, 600)}...</p>
+                        <p>{item.description.substring(0, 300)}...</p>
                     </div>)}
 
                     {/* <div>
