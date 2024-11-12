@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import './Popup.css';
 
 
-const Popup = ({ children }: { children: React.ReactNode}) => {
+const Popup = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -18,7 +18,7 @@ const Popup = ({ children }: { children: React.ReactNode}) => {
       <span className="popup-btn" onClick={togglePopup}>
         {action}
       </span>
-      
+
       {isOpen && (
         <motion.div
           className="popup-container"

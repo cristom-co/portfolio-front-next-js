@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import Popup from '../popup/Popup';
 
@@ -5,34 +7,54 @@ import './Slider.css';
 
 import { ItemSlider } from '../../../types';
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 const Slider = ({ items }: { items: ItemSlider[] }) => {
 
     return <div className='slider-wrapper'>
         <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} />
-        <div className="slider-container">
+        <Swiper
+            modules={[Pagination, Scrollbar, A11y]}
+            spaceBetween={5}
+            slidesPerView={1}
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            loop
+            style={{ width: '100%', height: '50vh' }} // Ajusta la altura completa de la pantalla
+
+        >
             {items.map((item, index) => (
+                <SwiperSlide
+                    key={index}>
+                    {/* <Popup> */}
+                    {item.type === 'image' ? (
+                        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                            <Image
+                                src={item.image ?? ''} // Ruta de la imagen
+                                alt={item.description} // Texto alternativo
+                                fill={true}
+                                className='rounded-xl'
+                                style={{
+                                    objectFit: 'cover',
+                                }}
+                            />
+                        </div>
+                    ) : (<div className='p-4 rounded-xl'>
+                        <h3 className=' font-bold'>{item.title}</h3>
+                        <p>{item.description.substring(0, 600)}...</p>
+                    </div>)}
 
-                <div className={`slider-item ${item.type === 'image' ? 'slider-item-image' : 'slider-item-text'}`} key={index}>
-
-                    <Popup>
-                        {item.type === 'image' ? (
-                            <div className='relative w-full h-80' >
-                                <Image
-                                    src={item.image ?? ''} // Ruta de la imagen
-                                    alt={item.description} // Texto alternativo
-                                    fill={true}
-                                    className='rounded-xl'
-                                    style={{
-                                        objectFit: 'cover',
-                                    }}
-                                />
-                            </div>
-                        ) : (<div className='p-4 rounded-xl'>
-                            <h3 className=' font-bold'>{item.title}</h3>
-                            <p>{item.description.substring(0, 300)}... <span className='text-sm text-gray-500'>See More</span></p>
-                        </div>)}
-
-                        <div>
+                    {/* <div>
                             {item.type == "text" && <h3 className='font-bold'>{item.title}</h3>}
                             <p className="my-5 text-lg">{item.description}</p>
                             {item.type === 'image' && (
@@ -46,10 +68,11 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                 />
                             )}
                         </div>
-                    </Popup>
-                </div>
+                    </Popup> */}
+                </SwiperSlide>
             ))}
-        </div>
+
+        </Swiper>
         <Image className='-rotate-90' src="/icons/arrow-down.png" alt="arrow-right" width={15} height={15} />
     </div>;
 };
