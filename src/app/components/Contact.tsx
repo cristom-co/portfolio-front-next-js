@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Contact = () => {
     return <div className="sectionSite">
-        <TitleSection title="Contact" description={"Phone: +57 3015567050 <br/> Email: cristhiantombe@gmail.com"} />
+        <TitleSection title="Contact" description="Feel free to reach out to me here!" />
         <div className="grid grid-cols-2 gap-4 mx-5">
             <div className="bg-gray-200 py-4  rounded-lg flex justify-center items-center">
                 <a href="https://www.linkedin.com/in/cristombe/" target="_blank" rel="Linkedin">

@@ -1,20 +1,15 @@
 import TitleSection from "./commons/TitleSection";
-import Image from "next/image";
+import Slider from "./commons/slider/Slider";
+import { skills } from "../data/skills";
+
+
+import { textDescriptionSkills } from "../data/general";
+
 const Skills = () => {
   return <div className="sectionSite">
-    <TitleSection title="Skills" description="Skilled in React Native, Redux, Jest, Cypress, Next.js, and Git Flow. English proficiency at B2 level for international collaboration." />
+    <TitleSection title="Skills" description={textDescriptionSkills} />
+    <Slider items={skills} />
 
-    <div className="grid grid-cols-3 gap-10 pt-2 mx-5 mt-10 place-items-center">
-      <Image src="/icons/imagen.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 21.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 22.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 23.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 24.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 25.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 26.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 27.png" alt="React" width={70} height={70} />
-      <Image src="/icons/imagen 28.png" alt="React" width={70} height={70} />
-    </div>
   </div>;
 };
 

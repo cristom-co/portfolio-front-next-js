@@ -1,3 +1,5 @@
+export const textDescription = "I have successfully collaborated with a wide range of industries, including advertising, finance, education, and travel, delivering tailored solutions that drive innovation and meet unique business goals."
+
 export const portafolio = [
 
     {
