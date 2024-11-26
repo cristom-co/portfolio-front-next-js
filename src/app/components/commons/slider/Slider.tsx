@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image';
 
 //types
@@ -11,14 +12,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 const Slider = ({ items }: { items: ItemSlider[] }) => {
 
     const handleSliderChange = (swiper: { activeIndex: number }) => {
-
         const activeSlideIndex = swiper.activeIndex % items.length;
         const slideData = items[activeSlideIndex];
-
-        console.log(slideData)
-
         // todo: add zustand to manage the popup
     }
+
+
+    const onClickImage = (item: ItemSlider) => {
+        if (item.type === "link" && item.link) {
+            window.open(item.link, '_blank'); // '_blank' abre el enlace en una nueva pestaña
+
+        }
+    }
+
+    const SliderWithImage = (typeItem: string) => ["image", "link"].includes(typeItem);
 
     return <div className='flex items-center relative '>
         <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} />
@@ -27,28 +34,29 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             spaceBetween={5}
             slidesPerView={1}
             loop
-            style={{ width: '100%', height: '40vh' }} // Ajusta la altura completa de la pantalla
-
+            style={{ width: '100%', height: '40vh' }}
         >
             {items.map((item, index) => (
                 <SwiperSlide
-                    key={index}>
-                    {item.type === 'image' ? (
+                    key={index}
+                    className='bg-slate-100 rounded-xl'>
+                    {SliderWithImage(item.type) ? (
                         <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                             <Image
+                                onClick={() => onClickImage(item)}
                                 src={item.image ?? ''} // Ruta de la imagen
                                 alt={item.description} // Texto alternativo
                                 fill={true}
-                                className='rounded-xl'
+                                className='rounded-xl cursor-pointer'
                                 style={{
                                     objectFit: 'cover',
                                 }}
                             />
                         </div>
                     ) : (
-                        <div className='p-4 rounded-xl bg-gray-200'>
-                            <h3 className=' font-bold'>{item.title}</h3>
-                            <p>{item.description.substring(0, 300)}...</p>
+                        <div className='px-8 py-3 rounded-xl bg-gray-200 h-full  flex flex-col items-center justify-center '>
+                            <h3 className=' font-bold mb-1'>{item.title}</h3>
+                            <p>{item.description.substring(0, 250)}...</p>
                         </div>)}
                 </SwiperSlide>
             ))}
