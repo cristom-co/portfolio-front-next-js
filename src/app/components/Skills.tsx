@@ -1,6 +1,6 @@
 import TitleSection from "./commons/TitleSection";
 import Slider from "./commons/slider/Slider";
-import { skills } from "../data/skills";
+import { skills } from "../data/sliderImages";
 
 
 import { textDescriptionSkills } from "../data/general";

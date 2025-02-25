@@ -49,7 +49,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                 fill={true}
                                 className='rounded-xl cursor-pointer'
                                 style={{
-                                    objectFit: 'cover',
+                                    objectFit: 'contain',
                                 }}
                             />
                         </div>

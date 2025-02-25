@@ -1,4 +1,4 @@
-import { experience } from "../data/experience";
+import { experience } from "../data/sliderImages";
 import { textDescripionResume } from "../data/general";
 
 import Slider from "./commons/slider/Slider";
