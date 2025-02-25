@@ -1,7 +1,7 @@
 const TitleSection = ({ title, description }: { title: string, description: string }) => {
   return <div className="my-9 mx-5">
     <h3 className=" font-bold text-lg pb-3">{title}</h3>
-    <p dangerouslySetInnerHTML={{ __html: description }} />
+    <p className="text-center" dangerouslySetInnerHTML={{ __html: description }} />
   </div>;
 };
 

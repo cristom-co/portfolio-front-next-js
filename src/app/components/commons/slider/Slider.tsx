@@ -54,10 +54,11 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                             />
                         </div>
                     ) : (
-                        <div className='px-8 py-3 rounded-xl bg-gray-200 h-full  flex flex-col items-center justify-center '>
+                        <div className='px-8 py-3 rounded-xl bg-slate-100 h-full flex flex-col items-center justify-center'>
                             <h3 className=' font-bold mb-1'>{item.title}</h3>
-                            <p>{item.description.substring(0, 250)}...</p>
-                        </div>)}
+                            <p className='break-words overflow-y-auto max-h-50'>{item.description}</p>
+                        </div>
+                    )}
                 </SwiperSlide>
             ))}
 
