@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <Image ref={imageRef} src="/icons/arrow-down.png" alt="flecha abajo" width={40} height={40} />
       </div>
-    </div>;
+    </div>
   </>
 };
 
