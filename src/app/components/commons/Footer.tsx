@@ -28,11 +28,13 @@ const Footer = () => {
     };
   }, []);
 
-  return <div className="fixed bottom-5 left-0 w-full hidden md:block">
-    <div className="flex flex-col items-center">
-      <Image ref={imageRef} src="/icons/arrow-down.png" alt="flecha abajo" width={40} height={40} />
-    </div>
-  </div>;
+  return <>
+    <div className="fixed bottom-5 left-0 w-full hidden md:block">
+      <div className="flex flex-col items-center">
+        <Image ref={imageRef} src="/icons/arrow-down.png" alt="flecha abajo" width={40} height={40} />
+      </div>
+    </div>;
+  </>
 };
 
 export default Footer;
