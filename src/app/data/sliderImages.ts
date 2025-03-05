@@ -50,15 +50,6 @@ export const skills = [
 
     {
         type: 'image',
-        image: '/images/iq.png',
-        imageComplete: '/icons/imagen.png',
-        title: '',
-        description: 'Lae - pagina web'
-    },
-
-
-    {
-        type: 'image',
         image: '/images/react.png',
         imageComplete: '/icons/imagen.png',
         title: '',
