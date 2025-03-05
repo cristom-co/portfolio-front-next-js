@@ -19,7 +19,7 @@ const CalendlyLink = () => {
                 href="https://calendly.com/cristhiantombe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1 bg-gray-400 text-white rounded hover:bg-gray-700 inline-block text-sm w-80 md:w-3/5"
+                className="px-4 py-1 bg-slate-200 rounded hover:bg-slate-400 hover:text-white inline-block text-sm w-11/12 md:w-10/12"
             >
                 Schedule a meeting with me
             </a>
