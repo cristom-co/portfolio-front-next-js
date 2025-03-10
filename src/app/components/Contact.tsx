@@ -1,4 +1,4 @@
-import Slider from "./commons/slider/Slider";
+import Slider from "./commons/Slider";
 import TitleSection from "./commons/TitleSection";
 
 import { contacts } from "../data/sliderImages";

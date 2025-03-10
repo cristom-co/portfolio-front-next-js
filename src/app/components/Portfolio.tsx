@@ -1,5 +1,5 @@
 
-import Slider from "./commons/slider/Slider";
+import Slider from "./commons/Slider";
 import TitleSection from "./commons/TitleSection";
 import { portafolio } from "../data/sliderImages";
 import { textDescription } from "../data/general";

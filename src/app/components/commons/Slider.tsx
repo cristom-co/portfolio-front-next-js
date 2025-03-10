@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 //types
-import { ItemSlider } from '../../../types';
+import { ItemSlider } from '../../types';
 
 //slider plugin
 import 'swiper/css';
@@ -16,7 +16,6 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
         const slideData = items[activeSlideIndex];
         // todo: add zustand to manage the popup
     }
-
 
     const onClickImage = (item: ItemSlider) => {
         if (item.type === "link" && item.link) {
@@ -34,25 +33,34 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             spaceBetween={5}
             slidesPerView={1}
             loop
-            style={{ width: '100%', height: '40vh' }}
+
+            style={{ width: '100%', height: 300 }}
         >
             {items.map((item, index) => (
                 <SwiperSlide
                     key={index}
-                    className='bg-slate-100 rounded-xl'>
+                    className='bg-slate-100 rounded-xl border border-slate-200'>
                     {SliderWithImage(item.type) ? (
-                        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
-                            <Image
-                                onClick={() => onClickImage(item)}
-                                src={item.image ?? ''} // Ruta de la imagen
-                                alt={item.description} // Texto alternativo
-                                fill={true}
-                                className='rounded-xl cursor-pointer'
-                                style={{
-                                    objectFit: 'contain',
-                                }}
-                            />
-                        </div>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                            <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                                <Image
+                                    onClick={() => onClickImage(item)}
+                                    src={item.image ?? ''} // Ruta de la imagen
+                                    alt={item.description} // Texto alternativo
+                                    className='rounded-xl cursor-pointer'
+                                    fill={true}
+                                    style={{
+                                        objectFit: 'cover',
+                                    }}
+                                />
+                            </div>
+                            {item.description && (
+                                <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-4 py-2 rounded-lg">
+                                    <h3 className='font-bold'>{item.title}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            )}
+                        </a>
                     ) : (
                         <div className='px-8 py-3 rounded-xl bg-slate-100 h-full flex flex-col items-center justify-center'>
                             <h3 className=' font-bold mb-1'>{item.title}</h3>

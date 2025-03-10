@@ -1,82 +1,122 @@
+import { link } from "fs"
 
 export const portafolio = [
 
     {
         type: 'image',
-        image: '/images/product1.png',
-        imageComplete: '/images/product1-complete.png',
-        title: '',
-        description: 'Lae - pagina web'
-    },
-    {
-        type: 'image',
-        image: '/images/product2.png',
+        image: '/images/portfolio/product2.png',
         imageComplete: '/images/product2-complete.png',
-        title: '',
-        description: 'Mobiera - outsorcing agendamiento de vuelos'
+        title: 'Mobiera',
+        description: 'Flight scheduling system',
+        link: "https://www.amplitudes-business-travel.com/eyoma/"
     },
     {
         type: 'image',
-        image: '/images/product3.png',
+        image: '/images/portfolio/product3.png',
         imageComplete: '/images/product3-complete.png',
-        title: '',
-        description: 'Uni2 - sistema de microcreditos'
+        title: 'Uni2',
+        description: 'Credit request management app',
+        link: "https://uni2.com.co/"
     },
     {
         type: 'image',
-        image: '/images/product4.png',
+        image: '/images/portfolio/product1.png',
+        imageComplete: '/images/product1-complete.png',
+        title: 'Lae',
+        description: 'Website to promote services',
+        link: "https://lae-edu.com/"
+    },
+    {
+        type: 'image',
+        image: '/images/portfolio/product4.png',
         imageComplete: '/images/product4-complete.png',
-        title: '',
-        description: 'Xigna - outsorcing de paginas web'
+        title: 'Xigna',
+        description: 'Web development agency',
+        link: "https://xignacv.com/"
     },
     {
         type: 'image',
-        image: '/images/product5.png',
+        image: '/images/portfolio/product5.png',
         imageComplete: '/images/product5-complete.png',
-        title: '',
-        description: 'MundoSoft - sistema de gestion de creditos'
+        title: 'MundoSoft',
+        description: 'Credit factory system',
+        link: "https://www.mundosoft.com.co/"
     },
 ]
 
 export const skills = [
-
     {
         type: 'image',
-        image: '/images/abilities.png',
+        image: '/images/skills/react.png',
         imageComplete: '/icons/imagen.png',
         title: '',
-        description: 'Lae - pagina web'
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/nextjs.jpg',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/vue.jpg',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/reactnative.png',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
     },
 
     {
         type: 'image',
-        image: '/images/react.png',
+        image: '/images/skills/express.png',
         imageComplete: '/icons/imagen.png',
         title: '',
-        description: 'Lae - pagina web'
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/fastapi.png',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/laravel.jpg',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/redux.png',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/jest.jpg',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
+    },
+    {
+        type: 'image',
+        image: '/images/skills/aws.jpg',
+        imageComplete: '/icons/imagen.png',
+        title: '',
+        description: ''
     },
 
-    {
-        type: 'image',
-        image: '/images/nextjs.jpg',
-        imageComplete: '/icons/imagen.png',
-        title: '',
-        description: 'Lae - pagina web'
-    },
-    {
-        type: 'image',
-        image: '/images/reactnative.png',
-        imageComplete: '/icons/imagen.png',
-        title: '',
-        description: 'Lae - pagina web'
-    },
-    {
-        type: 'image',
-        image: '/images/vuejs.webp',
-        imageComplete: '/icons/imagen.png',
-        title: '',
-        description: 'Lae - pagina web'
-    },
 ]
 
 export const experience = [
@@ -129,33 +169,33 @@ export const experience = [
 export const contacts = [
     {
         type: 'link',
-        image: '/images/LinkedIn.jpg',
+        image: '/images/contact/LinkedIn.jpg',
         imageComplete: '',
-        title: 'Linkedin',
+        title: '',
         description: '',
         link: "https://www.linkedin.com/in/cristombe/"
     },
     {
         type: 'link',
-        image: '/images/github.webp',
+        image: '/images/contact/github.jpg',
         imageComplete: '',
-        title: 'Github',
+        title: '',
         description: '',
         link: "https://github.com/cristom-co"
     },
     {
         type: 'link',
-        image: '/images/leetcode.png',
+        image: '/images/contact/leetcode.png',
         imageComplete: '',
-        title: 'Leetcode',
+        title: '',
         description: '',
         link: "https://leetcode.com/u/cristombe/"
     },
     {
         type: 'link',
-        image: '/images/upwork.png',
+        image: '/images/contact/upwork.png',
         imageComplete: '',
-        title: 'UpWork',
+        title: '',
         description: '',
         link: "https://www.upwork.com/freelancers/~010772ee5b4f404db9"
     },
