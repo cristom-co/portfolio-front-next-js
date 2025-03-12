@@ -2,15 +2,17 @@ import Slider from "./commons/Slider";
 import TitleSection from "./commons/TitleSection";
 
 import { contacts } from "../data/sliderImages";
-import CalendlyLink from "./CalendlyLink";
+// import CalendlyLink from "./CalendlyLink";
 import ConstructionLink from "./ConstructionLink";
+import FreelanceLink from "./FreelanceLink";
 
 const Contact = () => {
     return <div className="sectionSite">
         <TitleSection title="Find me online" description="Feel free to reach out to me here!" />
-        <CalendlyLink />
+        {/* <CalendlyLink /> */}
         <Slider items={contacts} />
-        <ConstructionLink />
+        <FreelanceLink />
+        {/* <ConstructionLink /> */}
 
     </div>;
 };
