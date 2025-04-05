@@ -1,15 +1,32 @@
 import type { Metadata } from "next";
 import Head from "next/head";
 
-import { Inter } from "next/font/google";
+import { Manrope, Rubik } from 'next/font/google'
+
+const rubik = Rubik({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-rubik',
+  display: 'swap',
+})
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], // elige los pesos que necesitas
+  variable: '--font-manrope',   // nombre de la variable CSS
+  display: 'swap',
+})
+
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Cristian Tombe - Front-end Developer",
   description: "Front-end Developer",
 };
+
+const combinedFontClasses = `${manrope.variable} ${rubik.variable} font-sans`;
 
 export default function RootLayout({
   children,
@@ -21,7 +38,7 @@ export default function RootLayout({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className={`${inter.className}`}>
+      <body className={combinedFontClasses}>
         {children}
       </body>
     </html>

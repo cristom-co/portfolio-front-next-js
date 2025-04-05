@@ -1,22 +1,19 @@
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
-import Skills from "./components/Skills";
-import Resume from "./components/Resume";
-import Contact from "./components/Contact";
-import Footer from "./components/commons/Footer";
-import WhatsappButton from "./components/WhatsappButton";
+import BenefitSection from "./components/BenefitSection";
+import FeatureListSection from "./components/FeatureListSection";
+import Footer from "./components/Footer";
+import HeroHeaderSection from "./components/HeroHeaderSection";
+import Navbar from "./components/Navbar";
+
+import WhatsappButton from "./components/oldComponents/WhatsappButton";
 
 export default function Home() {
   return (
     <>
       <WhatsappButton />
-      <Header />
-      <div className="sm:w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto">
-        <Portfolio />
-        <Skills />
-        <Resume />
-        <Contact />
-      </div>
+      <Navbar />
+      <HeroHeaderSection />
+      <FeatureListSection />
+      <BenefitSection />
       <Footer />
     </>
   );
