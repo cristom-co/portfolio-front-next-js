@@ -3,7 +3,7 @@ const FeatureListSection = () => {
     return (
         <section className="  bg-gray-900 text-white pt-28 pb-32 ">
             <div className="flex justify-center pb-16">
-                <h2 className="text-3xl sm:text-3xl md:text-5xl text-center text-white w-1/2">
+                <h2 className="text-3xl sm:text-3xl md:text-5xl text-center text-white w-11/12 md:w-1/2">
                     Transform Your Ideas into Reality with Our Web Development Services</h2>
             </div>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>

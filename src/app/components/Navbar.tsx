@@ -8,16 +8,15 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 bg-white z-50">
-            <div className="mx-auto px-24">
+            <div className="mx-auto px-5 md:px-24">
 
                 <div className="flex justify-between h-18 py-2">
                     <div className="hidden md:flex items-center space-x-6">
                         <a href="#" className="text-gray-700 hover:text-gray-900">Home Page</a>
                         <a href="#" className="text-gray-700 hover:text-gray-900">About Us</a>
                         <a href="#" className="text-gray-700 hover:text-gray-900">Services</a>
-                        {/* <a href="#" className="text-gray-700 hover:text-gray-900">Contact</a> */}
                     </div>
-                    <div className="w-[57%]">
+                    <div className="w-10/12 md:w-[57%]">
                         <Image
                             src="/images/logo3.1.png"
                             width={170}
