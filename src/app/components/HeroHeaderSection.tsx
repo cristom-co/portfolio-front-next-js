@@ -1,4 +1,7 @@
+"use client"
+
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const HeroHeaderSection = () => {
@@ -14,17 +17,24 @@ const HeroHeaderSection = () => {
                         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto pb-5">
                             At our company, we specialize in creating dynamic web and mobile applications using the latest technologies like React and Vue. Let us help you elevate your online presence and engage your audience effectively.        </p>
                         <div className="flex gap-4">
-                            <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
-                                Get Started
-                            </button>
-                            <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300">
-                                Learn more
-                            </button>
+                            <a href="https://wa.me/573015567050" target="_blank">
+                                <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
+                                    Get Started
+                                </button>
+                            </a>
+                            <Link href="#portfolio" scroll={false} onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+                            }}>
+                                <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300">
+                                    Learn more
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className='hidden md:block align-middle items-center'>
                         <Image
-                            className='pl-4'
+                            className='pl-4 rounded-md'
                             src="/images/hero-image.jpg"
                             width={500}
                             height={500}

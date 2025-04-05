@@ -5,6 +5,7 @@ import HeroHeaderSection from "./components/HeroHeaderSection";
 import Navbar from "./components/Navbar";
 
 import WhatsappButton from "./components/oldComponents/WhatsappButton";
+import Portfolio from "./components/Portfolio";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroHeaderSection />
       <FeatureListSection />
       <BenefitSection />
+      <Portfolio />
       <Footer />
     </>
   );

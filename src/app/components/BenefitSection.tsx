@@ -16,7 +16,7 @@ const BenefitSection = () => {
                     </div>
                     <div className='hidden md:block align-middle items-center'>
                         <Image
-                            className='pl-4'
+                            className='pl-4 rounded-md'
                             src="/images/benefit.jpg"
                             width={500}
                             height={500}

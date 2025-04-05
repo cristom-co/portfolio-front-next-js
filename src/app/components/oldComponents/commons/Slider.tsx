@@ -27,19 +27,19 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
     const SliderWithImage = (typeItem: string) => ["image", "link"].includes(typeItem);
 
     return <div className='flex items-center relative '>
-        <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} />
+        {/* <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} /> */}
         <Swiper
             onSlideChange={handleSliderChange}
             spaceBetween={5}
             slidesPerView={1}
             loop
 
-            style={{ width: '100%', height: 300 }}
+            style={{ width: '100%', height: 400 }}
         >
             {items.map((item, index) => (
                 <SwiperSlide
                     key={index}
-                    className='bg-slate-100 rounded-xl border border-slate-200'>
+                    className='bg-slate-100 rounded-md border border-slate-200'>
                     {SliderWithImage(item.type) ? (
                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
@@ -71,7 +71,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             ))}
 
         </Swiper>
-        <Image className='-rotate-90' src="/icons/arrow-down.png" alt="arrow-right" width={15} height={15} />
+        {/* <Image className='-rotate-90' src="/icons/arrow-down.png" alt="arrow-right" width={15} height={15} /> */}
     </div>;
 };
 
