@@ -55,7 +55,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                 />
                             </div>
                             {item.description && (
-                                <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-4 py-2 rounded-lg">
+                                <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-full h-24 text-lg">
                                     <h3 className='font-bold'>{item.title}</h3>
                                     <p>{item.description}</p>
                                 </div>
