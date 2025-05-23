@@ -1,29 +1,41 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="sm:w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto">
-      <h1>Política de Privacidad</h1>
-      <p>
-      Esta política de privacidad describe cómo manejamos y protegemos su información personal en relación con el uso de nuestros servicios. Nos comprometemos a proteger su privacidad y a garantizar que su información personal esté segura.
+    <div className="mt-10 sm:w-full md:w-3/4 lg:w-2/3 xl:w-1/2 2xl:w-1/3 mx-auto px-6 py-10 bg-white shadow-md rounded-lg">
+      <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Privacy Policy
+      </h1>
+      <p className="text-gray-600 leading-relaxed mb-6">
+        This privacy policy describes how we handle and protect your personal information in relation to the use of our services. We are committed to protecting your privacy and ensuring that your personal information is secure.
       </p>
-      <h2>Recopilación de Información</h2>
-      <p>
-      Recopilamos información personal que usted nos proporciona directamente, como su nombre, dirección de correo electrónico y cualquier otra información que decida compartir con nosotros. También podemos recopilar información automáticamente a través del uso de cookies y tecnologías similares.
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+        Information Collection
+      </h2>
+      <p className="text-gray-600 leading-relaxed mb-6">
+        We collect personal information that you provide to us directly, such as your name, email address, and any other information you choose to share with us. We may also collect information automatically through the use of cookies and similar technologies.
       </p>
-      <h2>Uso de la Información</h2>
-      <p>
-      Utilizamos la información recopilada para proporcionar, mantener y mejorar nuestros servicios, así como para comunicarnos con usted. No compartimos su información personal con terceros, excepto cuando sea necesario para cumplir con la ley o proteger nuestros derechos.
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+        Use of Information
+      </h2>
+      <p className="text-gray-600 leading-relaxed mb-6">
+        We use the information collected to provide, maintain, and improve our services, as well as to communicate with you. We do not share your personal information with third parties, except when necessary to comply with the law or protect our rights.
       </p>
-      <h2>Seguridad de la Información</h2>
-      <p>
-      Implementamos medidas de seguridad adecuadas para proteger su información personal contra el acceso no autorizado, la alteración, divulgación o destrucción. Sin embargo, no podemos garantizar la seguridad absoluta de su información.
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+        Information Security
+      </h2>
+      <p className="text-gray-600 leading-relaxed mb-6">
+        We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, we cannot guarantee the absolute security of your information.
       </p>
-      <h2>Cambios en la Política de Privacidad</h2>
-      <p>
-      Nos reservamos el derecho de actualizar esta política de privacidad en cualquier momento. Le notificaremos sobre cualquier cambio publicando la nueva política en nuestro sitio web. Le recomendamos revisar esta política periódicamente para estar informado sobre cómo protegemos su información.
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+        Changes to the Privacy Policy
+      </h2>
+      <p className="text-gray-600 leading-relaxed mb-6">
+        We reserve the right to update this privacy policy at any time. We will notify you of any changes by posting the new policy on our website. We encourage you to review this policy periodically to stay informed about how we protect your information.
       </p>
-      <h2>Contacto</h2>
-      <p>
-      Si tiene alguna pregunta o inquietud sobre nuestra política de privacidad, no dude en contactarnos a través de la información de contacto proporcionada en nuestro sitio web.
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+        Contact
+      </h2>
+      <p className="text-gray-600 leading-relaxed">
+        If you have any questions or concerns about our privacy policy, please feel free to contact us through the contact information provided on our website.
       </p>
     </div>
   );
