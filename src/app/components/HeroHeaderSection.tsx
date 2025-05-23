@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const HeroHeaderSection = () => {
     return (
-        
+
         <section className="relative h-screen flex items-center justify-center mt-10 md:mt-0">
             <div className="w-[95%] md:w-[73%] mx-auto pt-5">
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-2 items-center align-middle'>
@@ -14,9 +14,7 @@ const HeroHeaderSection = () => {
                         <h1 className=" text-4xl sm:text-5xl md:text-6xl text-gray-900 mb-10">
                             Transform Your Ideas into Stunning Digital Solutions
                         </h1>
-                        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto pb-5">
-                        Hi, I'm Cristian, a passionate developer who loves building web and mobile apps that truly make an impact. I work with modern technologies like React and Vue to create fast, dynamic, and engaging digital experiences. My goal is to help you elevate your online presence and connect with your audience in a meaningful way.
-                        </p>
+                        <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto pb-5"> Hi, I am Cristian, a passionate developer who loves building web and mobile apps that truly make an impact. I work with modern technologies like React and Vue to create fast, dynamic, and engaging digital experiences. My goal is to help you elevate your online presence and connect with your audience in a meaningful way. </p>
                         <div className="flex gap-4">
                             <a href="https://wa.me/573015567050" target="_blank">
                                 <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
