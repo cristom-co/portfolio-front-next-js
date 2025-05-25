@@ -58,8 +58,8 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                             </div>
                             {item.description && (
                                 <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-full h-24 text-lg my-10">
-                                    <h3 className=' text-4xl sm:text-5xl md:text-4xl text-white'>{item.title}</h3>
-                                    <p>{item.description}</p>
+                                    <h3 className=' text-3xl sm:text-4xl md:text-3xl text-white'>{item.title}</h3>
+                                    <p className='text-sm sm:text-lg '>{item.description}</p>
                                 </div>
                             )}
                         </a>
