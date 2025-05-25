@@ -1,5 +1,3 @@
-import { link } from "fs"
-
 export const portafolio = [
 
     {
@@ -7,7 +5,7 @@ export const portafolio = [
         image: '/images/portfolio/product2.png',
         imageComplete: '/images/product2-complete.png',
         title: 'Mobiera',
-        description: 'Flight scheduling system',
+        description: 'Corporate travel management system',
         link: "https://www.amplitudes-business-travel.com/eyoma/"
     },
     {
@@ -15,7 +13,7 @@ export const portafolio = [
         image: '/images/portfolio/product3.png',
         imageComplete: '/images/product3-complete.png',
         title: 'Uni2',
-        description: 'Credit request management app',
+        description: 'System for managing credit applications',
         link: "https://uni2.com.co/"
     },
     {
@@ -23,7 +21,7 @@ export const portafolio = [
         image: '/images/portfolio/product1.png',
         imageComplete: '/images/product1-complete.png',
         title: 'Lae',
-        description: 'Website to promote services',
+        description: 'Website to promote study abroad programs',
         link: "https://lae-edu.com/"
     },
     {
@@ -31,7 +29,7 @@ export const portafolio = [
         image: '/images/portfolio/product4.png',
         imageComplete: '/images/product4-complete.png',
         title: 'Xigna',
-        description: 'Web development agency',
+        description: 'advertising agency website',
         link: "https://xignacv.com/"
     },
     {
@@ -39,7 +37,7 @@ export const portafolio = [
         image: '/images/portfolio/product5.png',
         imageComplete: '/images/product5-complete.png',
         title: 'MundoSoft',
-        description: 'Credit factory system',
+        description: 'Credit system called Quasar',
         link: "https://www.mundosoft.com.co/"
     },
 ]

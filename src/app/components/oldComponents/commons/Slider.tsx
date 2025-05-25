@@ -7,20 +7,23 @@ import { ItemSlider } from '@/app/types';
 
 //slider plugin
 import 'swiper/css';
+import 'swiper/css/navigation';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
 
 const Slider = ({ items }: { items: ItemSlider[] }) => {
 
-    const handleSliderChange = (swiper: { activeIndex: number }) => {
-        const activeSlideIndex = swiper.activeIndex % items.length;
-        const slideData = items[activeSlideIndex];
-        // todo: add zustand to manage the popup
-    }
+    // const handleSliderChange = (swiper: { activeIndex: number }) => {
+    //     const activeSlideIndex = swiper.activeIndex % items.length;
+    //     const slideData = items[activeSlideIndex];
+    //     // todo: add zustand to manage the popup
+    // }
 
     const onClickImage = (item: ItemSlider) => {
         if (item.type === "link" && item.link) {
             window.open(item.link, '_blank'); // '_blank' abre el enlace en una nueva pestaña
-
         }
     }
 
@@ -29,17 +32,16 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
     return <div className='flex items-center relative '>
         {/* <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} /> */}
         <Swiper
-            onSlideChange={handleSliderChange}
-            spaceBetween={5}
+            spaceBetween={10}
             slidesPerView={1}
-            loop
-
-            style={{ width: '100%', height: 400 }}
+            style={{ width: '100%', height: 500 }}
+            modules={[Navigation]}
+            
         >
             {items.map((item, index) => (
                 <SwiperSlide
                     key={index}
-                    className='bg-slate-100 rounded-md border border-slate-200'>
+                    className='bg-black-100 px-5'>
                     {SliderWithImage(item.type) ? (
                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                             <div style={{ position: 'relative', width: '100%', height: '100%' }}>
@@ -55,8 +57,8 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                                 />
                             </div>
                             {item.description && (
-                                <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-full h-24 text-lg">
-                                    <h3 className='font-bold'>{item.title}</h3>
+                                <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-full h-24 text-lg my-10">
+                                    <h3 className=' text-4xl sm:text-5xl md:text-4xl text-white'>{item.title}</h3>
                                     <p>{item.description}</p>
                                 </div>
                             )}
@@ -67,6 +69,7 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                             <p className='break-words overflow-y-auto max-h-50'>{item.description}</p>
                         </div>
                     )}
+
                 </SwiperSlide>
             ))}
 
