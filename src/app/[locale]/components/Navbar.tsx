@@ -25,9 +25,9 @@ const Navbar = ({ currentLocale }: { currentLocale: string }) => {
             <div className="mx-auto px-5 md:px-24">
 
                 <div className="flex justify-between h-18 py-2">
-                    <div className="hidden md:flex items-center space-x-6">
+                    {/* <div className="hidden md:flex items-center space-x-6">
                         <a href="#" className="text-gray-700 hover:text-gray-900">{t('home')}</a>
-                    </div>
+                    </div> */}
                     
                     <div className="w-4/12 sm:w-5/12 md:w-[57%] lg:w-[60%] xl:w-[65%] 2xl:w-[70%]">
                     <Image
