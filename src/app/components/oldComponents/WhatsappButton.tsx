@@ -9,7 +9,7 @@ export default function WhatsappButton() {
             className="fixed bottom-4 right-4 bg-green-500 text-white py-3 px-5 rounded-full shadow-lg flex items-center gap-2 hover:scale-110 transition-transform z-50"
         >
             <Image
-                src="icons/220236.png"
+                src="/icons/220236.png"
                 alt="WhatsApp"
 
                 width={20}
