@@ -11,5 +11,40 @@
       "description": " Hi, I am Cristian, a passionate developer who loves building web and mobile apps that truly make an impact. I work with modern technologies like React and Vue to create fast, dynamic, and engaging digital experiences. My goal is to help you elevate your online presence and connect with your audience in a meaningful way.",
       "buttonGetStared": "Get Started",
       "buttonLearnMore": "Learn More"
+    },
+    "featureListSection": {
+      "title": "Unlock Your Digital Potential with Expert Web and Mobile Development Solutions",
+      "feature1": {
+        "title": "Expert Development in React, Vue, and React Native for Your Projects",
+        "description": "Choosing us means partnering with a team dedicated to transforming your ideas into stunning digital experiences. Our expertise in React, Vue, and React Native ensures your project is built with the latest technology for optimal performance and user engagement."
+      },
+      "feature2": {
+        "title": "Seamless User Experiences with Our Cutting-Edge Frontend Solutions",
+        "description": "Our frontend development services are designed to enhance user engagement and provide seamless interactions. We leverage the latest technologies to ensure your applications are engaging and user-friendly."
+      },
+      "feature3": {
+        "title": "Robust Backend Solutions to Support Your Growing Business Needs",
+        "description": "Our backend development services are built to support your growing business needs. We ensure your applications run smoothly and efficiently, providing a solid foundation for your digital presence and scalability ."
+      }
+    },
+    "benefitsSection": {
+      "title": "Unlock Your Digital Potential with Expert Web and Mobile Development Solutions",
+      "description": "Choosing us means partnering with a team dedicated to transforming your ideas into stunning digital experiences. Our expertise in React, Vue, and React Native ensures your project is built with the latest technology for optimal performance and user engagement."
+    },
+    "portfolio": {
+      "title":  "Explore Our Portfolio"
+    },
+    "footer": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookieSettings": "Cookie Settings",
+      "allRightsReserved": "© 2025 All rights reserved."
+    },
+    "slider": {
+      "Mobiera": "Corporate travel management system",
+      "Uni2": "System for managing credit applications",
+      "Lae": "Website to promote study abroad programs",
+      "Xigna": "Advertising agency website",
+      "MundoSoft": "Credit system called Quasar"
     }
 }

@@ -8,8 +8,43 @@
   },
   "heroHeaderSection": {
     "title": "Transformez vos idées en solutions numériques remarquables",
-    "description": "Bonjour, je suis Cristian, un développeur passionné qui adore créer des applications web et mobiles ayant un réel impact. Je travaille avec des technologies modernes comme React et Vue pour créer des expériences numériques rapides, dynamiques et engageantes. Mon objectif est de vous aider à renforcer votre présence en ligne et à établir un lien significatif avec votre public.",
+    "description": "Bonjour, je suis Cristian, un développeur passionné qui aime créer des applications web et mobiles qui ont un réel impact. Je travaille avec des technologies modernes comme React et Vue pour créer des expériences numériques rapides, dynamiques et engageantes. Mon objectif est de vous aider à renforcer votre présence en ligne et à établir un lien significatif avec votre public.",
     "buttonGetStared": "Commencer",
     "buttonLearnMore": "En savoir plus"
+  },
+  "featureListSection": {
+    "title": "Libérez votre potentiel numérique avec des solutions expertes en développement web et mobile",
+    "feature1": {
+      "title": "Développement expert en React, Vue et React Native pour vos projets",
+      "description": "Nous choisir, c’est faire équipe avec des experts dédiés à transformer vos idées en expériences numériques remarquables. Notre expertise en React, Vue et React Native garantit un projet construit avec les dernières technologies pour des performances optimales et un engagement utilisateur maximal."
+    },
+    "feature2": {
+      "title": "Expériences utilisateur fluides grâce à nos solutions frontend de pointe",
+      "description": "Nos services de développement frontend sont conçus pour améliorer l'engagement des utilisateurs et offrir des interactions fluides. Nous utilisons les dernières technologies pour garantir que vos applications soient attrayantes et conviviales."
+    },
+    "feature3": {
+      "title": "Solutions backend robustes pour accompagner les besoins croissants de votre entreprise",
+      "description": "Nos services backend sont conçus pour soutenir la croissance de votre entreprise. Nous veillons à ce que vos applications fonctionnent de manière fluide et efficace, en fournissant une base solide pour votre présence numérique et votre évolutivité."
+    }
+  },
+  "benefitsSection": {
+    "title": "Libérez votre potentiel numérique avec des solutions expertes en développement web et mobile",
+    "description": "Nous choisir, c’est faire équipe avec des experts dédiés à transformer vos idées en expériences numériques remarquables. Notre expertise en React, Vue et React Native garantit un projet construit avec les dernières technologies pour des performances optimales et un engagement utilisateur maximal."
+  },
+  "portfolio": {
+    "title": "Découvrez notre portfolio"
+  },
+  "footer": {
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookieSettings": "Paramètres des cookies",
+    "allRightsReserved": "© 2025 Tous droits réservés."
+  },
+  "slider": {
+    "Mobiera": "Système de gestion des voyages d'affaires",
+    "Uni2": "Système de gestion des demandes de crédit",
+    "Lae": "Site web pour promouvoir les programmes d'études à l'étranger",
+    "Xigna": "Site web d'une agence de publicité",
+    "MundoSoft": "Système de crédit appelé Quasar"
   }
 }

@@ -11,5 +11,40 @@
     "description": "Hola, soy Cristian, un desarrollador apasionado que ama crear aplicaciones web y móviles que realmente marcan la diferencia. Trabajo con tecnologías modernas como React y Vue para crear experiencias digitales rápidas, dinámicas y atractivas. Mi objetivo es ayudarte a elevar tu presencia en línea y conectar con tu audiencia de una manera significativa.",
     "buttonGetStared": "Comenzar",
     "buttonLearnMore": "Saber más"
+  },
+  "featureListSection": {
+    "title": "Libera tu potencial digital con soluciones expertas en desarrollo web y móvil",
+    "feature1": {
+      "title": "Desarrollo experto en React, Vue y React Native para tus proyectos",
+      "description": "Elegirnos significa asociarte con un equipo dedicado a transformar tus ideas en experiencias digitales impactantes. Nuestra experiencia en React, Vue y React Native garantiza que tu proyecto se construya con la última tecnología para un rendimiento óptimo y una mayor interacción del usuario."
+    },
+    "feature2": {
+      "title": "Experiencias de usuario fluidas con nuestras soluciones frontend de vanguardia",
+      "description": "Nuestros servicios de desarrollo frontend están diseñados para mejorar la interacción del usuario y ofrecer experiencias fluidas. Utilizamos las últimas tecnologías para asegurar que tus aplicaciones sean atractivas y fáciles de usar."
+    },
+    "feature3": {
+      "title": "Soluciones backend robustas para apoyar las necesidades crecientes de tu negocio",
+      "description": "Nuestros servicios de desarrollo backend están diseñados para respaldar el crecimiento de tu negocio. Aseguramos que tus aplicaciones funcionen sin problemas y con eficiencia, proporcionando una base sólida para tu presencia digital y escalabilidad."
+    }
+  },
+  "benefitsSection": {
+    "title": "Libera tu potencial digital con soluciones expertas en desarrollo web y móvil",
+    "description": "Elegirnos significa asociarte con un equipo dedicado a transformar tus ideas en experiencias digitales impactantes. Nuestra experiencia en React, Vue y React Native garantiza que tu proyecto se construya con la última tecnología para un rendimiento óptimo y una mayor interacción del usuario."
+  },
+  "portfolio": {
+    "title": "Explora nuestro portafolio"
+  },
+  "footer": {
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "cookieSettings": "Configuración de cookies",
+    "allRightsReserved": "© 2025 Todos los derechos reservados."
+  },
+  "slider": {
+    "Mobiera": "Sistema de gestión de viajes corporativos",
+    "Uni2": "Sistema para gestionar solicitudes de crédito",
+    "Lae": "Sitio web para promover programas de estudio en el extranjero",
+    "Xigna": "Sitio web de agencia de publicidad",
+    "MundoSoft": "Sistema de crédito llamado Quasar"
   }
 }

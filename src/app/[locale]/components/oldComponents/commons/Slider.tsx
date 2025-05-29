@@ -12,14 +12,12 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
+import {useTranslations} from 'next-intl';
+
 
 const Slider = ({ items }: { items: ItemSlider[] }) => {
 
-    // const handleSliderChange = (swiper: { activeIndex: number }) => {
-    //     const activeSlideIndex = swiper.activeIndex % items.length;
-    //     const slideData = items[activeSlideIndex];
-    //     // todo: add zustand to manage the popup
-    // }
+    const t = useTranslations('slider');
 
     const onClickImage = (item: ItemSlider) => {
         if (item.type === "link" && item.link) {
@@ -30,7 +28,6 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
     const SliderWithImage = (typeItem: string) => ["image", "link"].includes(typeItem);
 
     return <div className='flex items-center relative '>
-        {/* <Image className='rotate-90' src="/icons/arrow-down.png" alt="arrow-left" width={15} height={15} /> */}
         <Swiper
             spaceBetween={10}
             slidesPerView={1}
@@ -59,7 +56,11 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
                             {item.description && (
                                 <div className="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4 rounded-lg w-full h-24 text-lg my-10">
                                     <h3 className=' text-3xl sm:text-4xl md:text-3xl text-white'>{item.title}</h3>
-                                    <p className='text-sm sm:text-lg '>{item.description}</p>
+                                    <p className='text-sm sm:text-lg '>
+                                        {t(item.title)}
+
+                                        {/* {item.description} */}
+                                        </p>
                                 </div>
                             )}
                         </a>
@@ -74,7 +75,6 @@ const Slider = ({ items }: { items: ItemSlider[] }) => {
             ))}
 
         </Swiper>
-        {/* <Image className='-rotate-90' src="/icons/arrow-down.png" alt="arrow-right" width={15} height={15} /> */}
     </div>;
 };
 
