@@ -1,7 +1,7 @@
 import Slider from "./commons/Slider";
 import TitleSection from "./commons/TitleSection";
 
-import { contacts } from "@/app/data/sliderImages";
+import { contacts } from "@/app/[locale]/data/sliderImages";
 // import CalendlyLink from "./CalendlyLink";
 import ConstructionLink from "./ConstructionLink";
 import FreelanceLink from "./FreelanceLink";

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 //types
-import { ItemSlider } from '@/app/types';
+import { ItemSlider } from '@/app/[locale]/types';
 
 //slider plugin
 import 'swiper/css';

@@ -1,0 +1,15 @@
+{
+  "whatsappButton": {
+    "action": "Contactez-nous sur WhatsApp"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "openMenu": "Ouvrir le menu principal"
+  },
+  "heroHeaderSection": {
+    "title": "Transformez vos idées en solutions numériques remarquables",
+    "description": "Bonjour, je suis Cristian, un développeur passionné qui adore créer des applications web et mobiles ayant un réel impact. Je travaille avec des technologies modernes comme React et Vue pour créer des expériences numériques rapides, dynamiques et engageantes. Mon objectif est de vous aider à renforcer votre présence en ligne et à établir un lien significatif avec votre public.",
+    "buttonGetStared": "Commencer",
+    "buttonLearnMore": "En savoir plus"
+  }
+}

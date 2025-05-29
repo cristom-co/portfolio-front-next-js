@@ -1,5 +1,5 @@
 import Slider from './oldComponents/commons/Slider';
-import { portafolio } from "@/app/data/sliderImages";
+import { portafolio } from "@/app/[locale]/data/sliderImages";
 
 
 

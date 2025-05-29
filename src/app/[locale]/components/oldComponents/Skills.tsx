@@ -1,9 +1,9 @@
 import TitleSection from "./commons/TitleSection";
 import Slider from "./commons/Slider";
-import { skills } from "@/app/data/sliderImages";
+import { skills } from "@/app/[locale]/data/sliderImages";
 
 
-import { textDescriptionSkills } from "@/app/data/general";
+import { textDescriptionSkills } from "@/app/[locale]/data/general";
 
 const Skills = () => {
   return <div className="sectionSite">

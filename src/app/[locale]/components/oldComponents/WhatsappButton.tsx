@@ -1,6 +1,10 @@
 import Image from 'next/image';
+import {useTranslations} from 'next-intl';
 
 export default function WhatsappButton() {
+
+    const t = useTranslations('whatsappButton');
+
     return (
         <a
             href="https://wa.me/573015567050"
@@ -11,11 +15,10 @@ export default function WhatsappButton() {
             <Image
                 src="/icons/220236.png"
                 alt="WhatsApp"
-
-                width={20}
-                height={20}
+                width={30}
+                height={30}
             />
-            <span className="font-medium">Contact me</span>
+            <span className="font-medium">{t("action")}</span>
         </a>
     );
 }

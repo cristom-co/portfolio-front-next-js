@@ -1,7 +1,7 @@
 import Slider from "./commons/Slider";
 import TitleSection from "./commons/TitleSection";
-import { portafolio } from "@/app/data/sliderImages";
-import { textDescription } from "@/app/data/general";
+import { portafolio } from "@/app/[locale]/data/sliderImages";
+import { textDescription } from "@/app/[locale]/data/general";
 
 const Portfolio = () => {
   return <div className="sectionSite">
