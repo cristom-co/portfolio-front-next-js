@@ -4,6 +4,6 @@ export interface ItemSlider {
     imageComplete?: string,
     title: string,
     description: string,
-    link?: string,
+    link?: string | undefined,
     technologies?: string[],
 }

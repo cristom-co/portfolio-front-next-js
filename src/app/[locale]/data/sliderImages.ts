@@ -6,7 +6,7 @@ export const portafolio = [
         imageComplete: '/images/product2-complete.png',
         title: 'Mobiera',
         description: 'Corporate travel management system',
-        link: null,
+        link: undefined,
         technologies: ['React Native', 'Vue.js', 'Typescript', 'HTML', 'CSS', 'Python']
     },
       {
@@ -15,7 +15,7 @@ export const portafolio = [
         imageComplete: '/images/product2-complete.png',
         title: 'Ferreria Protool Jamundi',
         description: 'Website to promote a hardware store',
-        link: null,
+        link: undefined,
         technologies: ['Typescript', 'Next.js','HTML', 'CSS', ]
     },
     {
@@ -24,7 +24,7 @@ export const portafolio = [
         imageComplete: '/images/product3-complete.png',
         title: 'Uni2',
         description: 'System for managing credit applications',
-        link: null,
+        link: undefined,
         technologies: ['Angular', 'React', 'Python', 'JavaScript', 'HTML', 'CSS']
     },
     {
@@ -33,7 +33,7 @@ export const portafolio = [
         imageComplete: '/images/product1-complete.png',
         title: 'Lae',
         description: 'Website to promote study abroad programs',
-        link: null,
+        link: undefined,
         technologies: ['Laravel', 'JavaScript', 'HTML', 'CSS', 'MongoDB']
     },
     {
@@ -42,7 +42,7 @@ export const portafolio = [
         imageComplete: '/images/product4-complete.png',
         title: 'Xigna',
         description: 'advertising agency website',
-        link: null,
+        link: undefined,
         technologies: ['Laravel', 'JavaScript', 'HTML', 'CSS', 'MySQL']
     },
     {
@@ -51,7 +51,7 @@ export const portafolio = [
         imageComplete: '/images/product5-complete.png',
         title: 'MundoSoft',
         description: 'Credit system called Quasar',
-        link: null,
+        link: undefined,
         technologies: ['Laravel', 'Oracle', 'PL/SQL']
     },
 ]
