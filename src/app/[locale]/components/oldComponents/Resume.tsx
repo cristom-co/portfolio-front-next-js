@@ -1,7 +1,7 @@
 import { experience } from "@/app/[locale]/data/sliderImages";
 import { textDescripionResume } from "@/app/[locale]/data/general";
 
-import Slider from "./commons/Slider";
+import Slider from "./commons/slider/Slider";
 import TitleSection from "./commons/TitleSection";
 
 const Resume = () => {

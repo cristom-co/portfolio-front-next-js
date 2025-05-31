@@ -1,0 +1,21 @@
+    .responsive-slider-height {
+        height: 40vh;
+    }
+
+    @media (min-width: 640px) {
+        .responsive-slider-height {
+            height: 50vh;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .responsive-slider-height {
+            height: 60vh;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .responsive-slider-height {
+            height: 600px;
+        }
+    }

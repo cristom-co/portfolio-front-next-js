@@ -2,43 +2,57 @@ export const portafolio = [
 
     {
         type: 'image',
-        image: '/images/portfolio/product2.png',
+        image: '/images/portfolio/mobiera.png',
         imageComplete: '/images/product2-complete.png',
         title: 'Mobiera',
         description: 'Corporate travel management system',
-        link: "https://www.amplitudes-business-travel.com/eyoma/"
+        link: null,
+        technologies: ['React Native', 'Vue.js', 'Typescript', 'HTML', 'CSS', 'Python']
+    },
+      {
+        type: 'image',
+        image: '/images/portfolio/ferreteriaJamundi.png',
+        imageComplete: '/images/product2-complete.png',
+        title: 'Ferreria Protool Jamundi',
+        description: 'Website to promote a hardware store',
+        link: null,
+        technologies: ['Typescript', 'Next.js','HTML', 'CSS', ]
     },
     {
         type: 'image',
-        image: '/images/portfolio/product3.png',
+        image: '/images/portfolio/finamiga.png',
         imageComplete: '/images/product3-complete.png',
         title: 'Uni2',
         description: 'System for managing credit applications',
-        link: "https://uni2.com.co/"
+        link: null,
+        technologies: ['Angular', 'React', 'Python', 'JavaScript', 'HTML', 'CSS']
     },
     {
         type: 'image',
-        image: '/images/portfolio/product1.png',
+        image: '/images/portfolio/lae.png',
         imageComplete: '/images/product1-complete.png',
         title: 'Lae',
         description: 'Website to promote study abroad programs',
-        link: "https://lae-edu.com/"
+        link: null,
+        technologies: ['Laravel', 'JavaScript', 'HTML', 'CSS', 'MongoDB']
     },
     {
         type: 'image',
-        image: '/images/portfolio/product4.png',
+        image: '/images/portfolio/xigna.png',
         imageComplete: '/images/product4-complete.png',
         title: 'Xigna',
         description: 'advertising agency website',
-        link: "https://xignacv.com/"
+        link: null,
+        technologies: ['Laravel', 'JavaScript', 'HTML', 'CSS', 'MySQL']
     },
     {
         type: 'image',
-        image: '/images/portfolio/product5.png',
+        image: '/images/portfolio/mundosoft.png',
         imageComplete: '/images/product5-complete.png',
         title: 'MundoSoft',
         description: 'Credit system called Quasar',
-        link: "https://www.mundosoft.com.co/"
+        link: null,
+        technologies: ['Laravel', 'Oracle', 'PL/SQL']
     },
 ]
 

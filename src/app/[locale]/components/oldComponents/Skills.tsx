@@ -1,5 +1,5 @@
 import TitleSection from "./commons/TitleSection";
-import Slider from "./commons/Slider";
+import Slider from "./commons/slider/Slider";
 import { skills } from "@/app/[locale]/data/sliderImages";
 
 

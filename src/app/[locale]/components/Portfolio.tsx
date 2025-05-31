@@ -1,4 +1,4 @@
-import Slider from './oldComponents/commons/Slider';
+import Slider from './oldComponents/commons/slider/Slider';
 import { portafolio } from "@/app/[locale]/data/sliderImages";
 import {useTranslations} from 'next-intl';
 
