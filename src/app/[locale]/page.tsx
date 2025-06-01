@@ -10,7 +10,7 @@ import Portfolio from "./components/Portfolio";
 
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'Cristhian Tombe - Full Stack Developer Portfolio',
   description: 'Welcome to Cristian Tombe\'s portfolio. Full Stack Developer with expertise in modern web technologies, creating innovative digital solutions.',
   openGraph: {
     title: 'Cristian Tombe - Full Stack Developer Portfolio',

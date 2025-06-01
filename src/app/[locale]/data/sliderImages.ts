@@ -2,6 +2,15 @@ export const portafolio = [
 
     {
         type: 'image',
+        image: '/images/portfolio/construye.png',
+        imageComplete: '/images/product2-complete.png',
+        title: 'Construye & Domotiza',
+        description: 'Website to promote a construction and home automation company',
+        link: undefined,
+        technologies: ['React', 'Next.js', 'Typescript', 'HTML', 'CSS', 'Tailwind CSS']
+    },
+    {
+        type: 'image',
         image: '/images/portfolio/mobiera.png',
         imageComplete: '/images/product2-complete.png',
         title: 'Mobiera',
@@ -16,7 +25,7 @@ export const portafolio = [
         title: 'Ferreria Protool Jamundi',
         description: 'Website to promote a hardware store',
         link: undefined,
-        technologies: ['Typescript', 'Next.js','HTML', 'CSS', ]
+        technologies: ['Typescript', 'Next.js','HTML', 'CSS',  'Tailwind CSS']
     },
     {
         type: 'image',
