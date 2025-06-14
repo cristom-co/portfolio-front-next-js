@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from 'react';
-import Image from 'next/image';
-import {useTranslations} from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 import { localeLabels, routing } from "@/i18n/routing";
 import { useRouter } from 'next/navigation'
+import Logo from './Logo';
 
 const Navbar = ({ currentLocale }: { currentLocale: string }) => {
 
@@ -16,10 +16,10 @@ const Navbar = ({ currentLocale }: { currentLocale: string }) => {
 
     const router = useRouter()
     const handleChangeLocale = (locale: string) => {
-      if (locale === currentLocale) return
-      router.push(locale)
+        if (locale === currentLocale) return
+        router.push(locale)
     }
-  
+
     return (
         <nav className="fixed top-0 left-0 right-0 bg-white z-50">
             <div className="mx-auto px-5 md:px-24">
@@ -28,28 +28,22 @@ const Navbar = ({ currentLocale }: { currentLocale: string }) => {
                     {/* <div className="hidden md:flex items-center space-x-6">
                         <a href="#" className="text-gray-700 hover:text-gray-900">{t('home')}</a>
                     </div> */}
-                    
+
                     <div className="w-4/12 sm:w-5/12 md:w-[57%] lg:w-[60%] xl:w-[65%] 2xl:w-[70%]">
-                    <Image
-                            src="/images/logo3.1.png"
-                            width={170}
-                            height={100}
-                            alt="Picture of the author"
-                        />
+                        <Logo width={60} height={60} alt="Logo" />
                     </div>
-                    
+
                     <div className="md:flex items-center space-x-1">
                         {routing.locales.map((locale: string) => (
-                           <button
-                           key={locale}
-                           onClick={() => handleChangeLocale(locale)}
-                           aria-label={localeLabels[locale].label}
-                           className={`pt-1 text-lg md:text-2xl lg:text-2xl transition-opacity ${
-                             locale === currentLocale ? 'opacity-100' : 'opacity-50 hover:opacity-80'
-                           }`}
-                         >
-                           {localeLabels[locale].flag}
-                         </button>
+                            <button
+                                key={locale}
+                                onClick={() => handleChangeLocale(locale)}
+                                aria-label={localeLabels[locale].label}
+                                className={`pt-1 text-lg md:text-2xl lg:text-2xl transition-opacity ${locale === currentLocale ? 'opacity-100' : 'opacity-50 hover:opacity-80'
+                                    }`}
+                            >
+                                {localeLabels[locale].flag}
+                            </button>
                         ))}
                     </div>
 
@@ -81,7 +75,7 @@ const Navbar = ({ currentLocale }: { currentLocale: string }) => {
                 </div>
             )}
 
-            
+
         </nav>
     );
 };

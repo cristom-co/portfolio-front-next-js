@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {useTranslations} from 'next-intl';
+import Logo from "@/app/[locale]/components/Logo";
 
 
 const Footer = () => {
@@ -12,13 +13,7 @@ const Footer = () => {
       <div className="relative flex items-center justify-center">
         <div className="w-11/12 md:w-8/12 border-2 px-12 py-5 grid grid-cols-1 md:grid-cols-3 gap-2">
           <div className="flex justify-between items-end">
-            <Image
-              className="mt-5"
-              src="/images/logo3.1.png"
-              width={150}
-              height={150}
-              alt="Picture of the author"
-            />
+            <Logo width={60} height={60} alt="Logo" />
           </div>
           <div className="flex justify-center items-center">
             <Image
