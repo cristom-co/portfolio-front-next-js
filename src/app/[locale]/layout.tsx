@@ -34,11 +34,15 @@ export const viewport: Viewport = {
 
 //*** Metadata */
 export const metadata: Metadata = {
+  
   title: {
     default: 'Cristian Tombe - Full Stack Developer | Modern Web Solutions',
     template: '%s | Cristian Tombe'
   },
   description: 'Full Stack Developer specializing in React, Next.js, and Node.js. I create modern, scalable web solutions for businesses and startups.',
+  icons: {
+    icon: '/icons/programming.png',
+  },
   keywords: [
     'full stack developer',
     'react developer',

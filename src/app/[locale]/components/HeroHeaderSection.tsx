@@ -13,7 +13,7 @@ const HeroHeaderSection = () => {
             <div className="w-[95%] md:w-[73%] mx-auto pt-5">
                 <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-2 items-center align-middle'>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h1 className=" text-4xl sm:text-5xl md:text-6xl text-gray-900 mb-10">
+                        <h1 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl text-gray-900 mb-10">
                             {t('title')}
                         </h1>
                         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto pb-5">{t('description')} </p>
