@@ -15,9 +15,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
 import {useTranslations} from 'next-intl';
+import { useEffect } from 'react';
 
 
 const Slider = ({ items }: { items: ItemSlider[] }) => {
+
+    useEffect(() => {
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: orange !important;
+            }
+        `;
+        document.head.appendChild(style);
+        return () => {
+            document.head.removeChild(style);
+        };
+    }, []);
+
 
     const t = useTranslations('slider');
 

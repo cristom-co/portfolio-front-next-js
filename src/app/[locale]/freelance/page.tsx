@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import WhatsappButton from '../components//oldComponents/WhatsappButton';
+import WhatsappButton from '../components//WhatsappButton';
 
 export default function Freelance() {
   return (

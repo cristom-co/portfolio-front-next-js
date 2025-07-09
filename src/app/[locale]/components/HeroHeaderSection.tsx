@@ -18,18 +18,11 @@ const HeroHeaderSection = () => {
                         </h1>
                         <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto pb-5">{t('description')} </p>
                         <div className="flex gap-4">
-                            <a href="https://wa.me/573015567050" target="_blank">
-                                <button className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300">
-                                    {t('buttonGetStared')}
-                                </button>
+                            <a href="https://wa.me/573015567050" target="_blank" className="bg-orange-600 text-white px-8 py-3 rounded-lg hover:bg-orange-700 transition duration-300 flex items-center justify-center">
+                                {t('buttonGetStarted')}
                             </a>
-                            <Link href="#portfolio" scroll={false} onClick={(e) => {
-                                e.preventDefault();
-                                document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
-                            }}>
-                                <button className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300">
-                                    {}{t('buttonLearnMore')}
-                                </button>
+                            <Link href="#portfolio" className="border-2 border-orange-600 text-orange-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition duration-300 flex items-center justify-center">
+                                {t('buttonLearnMore')}
                             </Link>
                         </div>
                     </div>

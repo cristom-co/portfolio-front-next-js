@@ -33,80 +33,82 @@ export const viewport: Viewport = {
 }
 
 //*** Metadata */
-export const metadata: Metadata = {
-  
-  title: {
-    default: 'Cristian Tombe - Full Stack Developer | Modern Web Solutions',
-    template: '%s | Cristian Tombe'
-  },
-  description: 'Full Stack Developer specializing in React, Next.js, and Node.js. I create modern, scalable web solutions for businesses and startups.',
-  icons: {
-    icon: '/icons/programming.png',
-  },
-  keywords: [
-    'full stack developer',
-    'react developer',
-    'nextjs developer',
-    'web development',
-    'cristian tombe',
-    'javascript programmer',
-    'frontend development',
-    'backend development',
-    'web designer',
-    'software engineer'
-  ],
-  authors: [{ name: 'Cristian Tombe' }],
-  creator: 'Cristian Tombe',
-  publisher: 'Cristian Tombe',
-  metadataBase: new URL('https://cristiantombe.com'),
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://cristiantombe.com',
-    title: 'Cristian Tombe - Full Stack Developer',
-    description: 'Full Stack Developer specializing in React, Next.js, and Node.js. Creating modern, scalable web solutions for businesses and startups.',
-    siteName: 'Cristian Tombe Portfolio',
-    images: [
-      {
-        url: '',
-        width: 1200,
-        height: 630,
-        alt: 'Cristian Tombe - Full Stack Developer',
-      }
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const { locale } = params;
+
+  return {
+    title: {
+      default: 'Cristian Tombe - Full Stack Developer | Modern Web Solutions',
+      template: '%s | Cristian Tombe'
+    },
+    description: 'Full Stack Developer specializing in React, Next.js, and Node.js. I create modern, scalable web solutions for businesses and startups.',
+    icons: {
+      icon: '/icons/programming.png',
+    },
+    keywords: [
+      'full stack developer',
+      'react developer',
+      'nextjs developer',
+      'web development',
+      'cristian tombe',
+      'javascript programmer',
+      'frontend development',
+      'backend development',
+      'web designer',
+      'software engineer'
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Cristian Tombe - Full Stack Developer',
-    description: 'Full Stack Developer specializing in React, Next.js, and Node.js.',
-    images: ['/twitter-image.jpg'],
-    creator: '@cristiantombe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    authors: [{ name: 'Cristian Tombe' }],
+    creator: 'Cristian Tombe',
+    publisher: 'Cristian Tombe',
+    metadataBase: new URL('https://cristiantombe.com'),
+    alternates: {
+      canonical: '/',
+    },
+    openGraph: {
+      type: 'website',
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      url: 'https://cristiantombe.com',
+      title: 'Cristian Tombe - Full Stack Developer',
+      description: 'Full Stack Developer specializing in React, Next.js, and Node.js. Creating modern, scalable web solutions for businesses and startups.',
+      siteName: 'Cristian Tombe Portfolio',
+      images: [
+        {
+          url: `https://cristiantombe.com/og-image-${locale}.jpg`, 
+          width: 1200,
+          height: 630,
+          alt: 'Cristian Tombe - Full Stack Developer',
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Cristian Tombe - Full Stack Developer',
+      description: 'Full Stack Developer specializing in React, Next.js, and Node.js.',
+      images: [`https://cristiantombe.com/twitter-image-${locale}.jpg`],
+      creator: '@cristiantombe',
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
-  },
-  //todo: get verification codes from environment variables
-  verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
-  },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || '',
+      yandex: process.env.NEXT_PUBLIC_YANDEX_SITE_VERIFICATION || '',
+      yahoo: process.env.NEXT_PUBLIC_YAHOO_SITE_VERIFICATION || '',
+    },
+  };
 }
 
 
 import Navbar from "./components/Navbar";
-import WhatsappButton from "./components/oldComponents/WhatsappButton";
+import WhatsappButton from "./components/WhatsappButton";
 
 export default async function LocaleLayout({
   children,
@@ -123,7 +125,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={combinedFontClasses}>
         <NextIntlClientProvider>
           <WhatsappButton />
